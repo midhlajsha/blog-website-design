@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://midhlajsha.github.io/blog-website-design/sitemap.xml
