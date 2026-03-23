@@ -12,91 +12,120 @@
     <link rel="canonical" href="https://midhlajsha.github.io/blog-website-design/post.html">
     <title>Architecting Scalable Frontends in 2026 | Bitess</title>
     
-    <!-- Fonts: Inter (UI) & Lora (Reading) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Google AdSense Placeholder -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=332-722-9307" crossorigin="anonymous"></script>
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <a href="index.html" class="logo">Bitess</a>
-        </div>
-        <div class="nav-right nav-links">
-            <a href="#" class="write-btn"><i class="far fa-edit"></i> Write</a>
-            <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fas fa-moon"></i>
-            </button>
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="author-tiny-avatar" style="cursor: pointer;">
-        </div>
-    </nav>
-    
-    <div class="progress-container">
-        <div class="progress-bar" id="progress-bar"></div>
-    </div>
-
-    <article class="article-wrapper">
-        
-        <h1 class="article-title fade-up">Architecting Scalable Frontends in 2026</h1>
-        <p class="article-subtitle fade-up">Discover new patterns for managing massive component trees and global state securely.</p>
-        
-        <div class="article-author-card fade-up">
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj" class="article-author-avatar">
-            <div class="author-meta">
-                <span class="author-name">Midhlaj</span>
-                <span class="author-details">Published in Engineering &bull; 5 min read &bull; Mar 23</span>
+    <header class="main-header">
+        <div class="nav-container">
+            <div style="display: flex; gap: 3rem; align-items: center;">
+                <a href="index.html" class="logo">BITESS</a>
+                <nav class="main-nav-links">
+                    <a href="#">Startups</a>
+                    <a href="#" style="color: var(--accent);">Engineering</a>
+                    <a href="#">Security</a>
+                    <a href="#">AI</a>
+                </nav>
+            </div>
+            <div class="nav-toggles">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+                <i class="fas fa-search" style="font-size: 1.2rem; cursor: pointer;"></i>
             </div>
         </div>
+    </header>
 
-        <div class="article-stats-bar fade-up">
-            <span><i class="far fa-heart"></i> 4.2K</span>
-            <span><i class="far fa-comment"></i> 132</span>
-            <span><i class="far fa-bookmark"></i></span>
+    <div class="page-container article-layout">
+        <!-- Main Article Content -->
+        <main class="article-main">
+            <span class="hero-tag" style="font-size: 1rem; margin-bottom: 1rem;">Engineering structure</span>
+            <h1 class="article-main-title">Architecting Scalable Frontends in 2026</h1>
+            <p class="article-main-subtitle">Discover new patterns for managing massive component trees and global state securely.</p>
+            
+            <div class="article-meta-bar">
+                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj">
+                <span>By <a href="#" style="color: var(--accent);">Midhlaj</a></span>
+                <span style="color: var(--text-muted);">|</span>
+                <span style="color: var(--text-muted);">Published March 23, 2026</span>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Laptop code" class="article-hero-img">
+
+            <div class="article-body">
+                <p>The landscape of frontend development is continuously shifting. What was considered a robust architecture just a few years ago is now often seen as bloated and difficult to maintain. As applications grow in complexity and user expectations soar, finding architectural patterns that scale gracefully is more critical than ever.</p>
+                
+                <p>In 2026, the discussion has largely moved away from just choosing a framework. It's about establishing clear boundaries, isolating state, and creating a cohesive design system that non-engineers can interact with. Here are some of the dominant strategies emerging.</p>
+
+                <!-- In-Article Ad Unit -->
+                <div class="ad-container" style="min-height: 200px;">
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="332-722-9307"
+                         data-ad-slot="XXXXXXXXXX"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+
+                <h2>1. The Rise of Micro-Frontends (Done Right)</h2>
+                <p>Micro-frontends are no longer the buzzword they once were; they have matured into a practical solution for large teams. By dividing the application by business domain rather than technical layers, independent autonomous teams can deploy features faster and with less risk.</p>
+                
+                <blockquote>
+                    "The key to micro-frontends is not the technology you use to stitch them together, but the clarity of the domain boundaries you draw."
+                </blockquote>
+
+                <p>However, the challenge remains shared state and performance overhead. Teams are solving this by heavily relying on Edge computing to compose fragments before they reach the browser, ensuring the user still perceives a single, monolithic application.</p>
+
+                <h2>2. Server-Driven UI</h2>
+                <p>We are seeing a massive resurgence in server-driven UI, where the server dictates not just the data, but the components to be rendered. This allows companies to update the UI on mobile and web simultaneously without requiring app store updates or complex client-side versioning.</p>
+
+                <h2>3. Local-First Architecture</h2>
+                <p>Users expect applications to work seamlessly offline and sync instantaneously when a connection is restored. Local-first architecture prioritizes the local database as the primary source of truth. Changes are optimistic, fast, and later synced via CRDTs (Conflict-free Replicated Data Types) to the backend.</p>
+                
+                <p>This approach virtually eliminates loading spinners for data mutations and provides an incredibly snappy user experience.</p>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-widget">
+                <!-- Google AdSense Ad Unit -->
+                <div class="ad-container" style="min-height: 250px; margin-top: 0;">
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="332-722-9307"
+                         data-ad-slot="XXXXXXXXXX"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <p style="position: absolute; top: 0; left: 5px; font-size: 0.6rem;">ADVERTISEMENT</p>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h4>Trending Now</h4>
+                <ol class="trending-list">
+                    <li><a href="#">Google unveils new Edge capabilities for major browsers</a></li>
+                    <li><a href="#">The death of the blurry background: UI trends 2026</a></li>
+                    <li><a href="pesto-chicken-pasta.html">Stop Ordering Takeout: The massive shift to 15-minute meals</a></li>
+                    <li><a href="#">Why WebGL and native DOM are finally perfectly synced</a></li>
+                </ol>
+            </div>
+            
+            <div class="sidebar-widget" style="background: #f9f9f9; padding: 1.5rem; text-align: center; border: 1px solid var(--border-color);">
+                <i class="far fa-envelope" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h4 style="border-bottom: none; text-transform: none; font-size: 1.1rem; margin-bottom: 0.5em;">Get the daily newsletter</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">The latest tech news straight to your inbox.</p>
+                <a href="#" style="display: block; background: var(--text-main); color: var(--bg-color); padding: 0.75rem; font-weight: bold; font-size: 0.9rem;">SUBSCRIBE</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer style="background: var(--header-bg); color: var(--header-text); padding: 3rem 2rem; border-top: 4px solid var(--accent); margin-top: 4rem;">
+        <div class="page-container" style="display: flex; justify-content: space-between; align-items: center; padding: 0;">
+            <h2 class="logo">BITESS</h2>
+            <p style="font-size: 0.85rem; color: #888;">&copy; 2026 Bitess News Media. All rights reserved.</p>
         </div>
-
-        <!-- Google AdSense Ad Unit -->
-        <div style="text-align: center; margin: 2rem 0;" class="fade-up">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="332-722-9307"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <div class="article-body fade-up">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Laptop code">
-            
-            <p>The landscape of frontend development is continuously shifting. What was considered a robust architecture just a few years ago is now often seen as bloated and difficult to maintain. As applications grow in complexity and user expectations soar, finding architectural patterns that scale gracefully is more critical than ever.</p>
-            
-            <p>In 2026, the discussion has largely moved away from just choosing a framework. It's about establishing clear boundaries, isolating state, and creating a cohesive design system that non-engineers can interact with. Here are some of the dominant strategies emerging.</p>
-
-            <h2>1. The Rise of Micro-Frontends (Done Right)</h2>
-            <p>Micro-frontends are no longer the buzzword they once were; they have matured into a practical solution for large teams. By dividing the application by business domain rather than technical layers, independent autonomous teams can deploy features faster and with less risk.</p>
-            
-            <blockquote>
-                "The key to micro-frontends is not the technology you use to stitch them together, but the clarity of the domain boundaries you draw."
-            </blockquote>
-
-            <p>However, the challenge remains shared state and performance overhead. Teams are solving this by heavily relying on Edge computing to compose fragments before they reach the browser, ensuring the user still perceives a single, monolithic application.</p>
-
-            <h2>2. Server-Driven UI</h2>
-            <p>We are seeing a massive resurgence in server-driven UI, where the server dictates not just the data, but the components to be rendered. This allows companies to update the UI on mobile and web simultaneously without requiring app store updates or complex client-side versioning.</p>
-
-            <h2>3. Local-First Architecture</h2>
-            <p>Users expect applications to work seamlessly offline and sync instantaneously when a connection is restored. Local-first architecture prioritizes the local database as the primary source of truth. Changes are optimistic, fast, and later synced via CRDTs (Conflict-free Replicated Data Types) to the backend.</p>
-            
-            <p>This approach virtually eliminates loading spinners for data mutations and provides an incredibly snappy user experience.</p>
-        </div>
-    </article>
+    </footer>
 
     <script src="script.js"></script>
 </body>

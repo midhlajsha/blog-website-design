@@ -4,145 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A visually stunning modern blog exploring tech, design, and beyond.">
-    <meta property="og:title" content="Bitess | Home">
-    <meta property="og:description" content="A visually stunning modern blog exploring tech, design, and beyond.">
+    <meta property="og:title" content="Bitess | Breaking Tech & Design News">
+    <meta property="og:description" content="The absolute forefront of technology, startups, and design patterns.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://midhlajsha.github.io/blog-website-design/index.html">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://midhlajsha.github.io/blog-website-design/index.html">
-    <title>Bitess | Home</title>
+    <title>Bitess | Tech & Startups</title>
     
-    <!-- Fonts: Inter (UI) & Lora (Reading) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Google AdSense Placeholder -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=332-722-9307" crossorigin="anonymous"></script>
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <a href="index.html" class="logo">Bitess</a>
-            <div class="search-bar">
-                <i class="fas fa-search" style="color: var(--text-muted); font-size: 0.9rem;"></i>
-                <input type="text" placeholder="Search">
+    <header class="main-header">
+        <div class="nav-container">
+            <div style="display: flex; gap: 3rem; align-items: center;">
+                <a href="index.html" class="logo">BITESS</a>
+                <nav class="main-nav-links">
+                    <a href="#">Startups</a>
+                    <a href="#">Venture</a>
+                    <a href="#">Security</a>
+                    <a href="#">AI</a>
+                    <a href="#">Design</a>
+                </nav>
+            </div>
+            <div class="nav-toggles">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+                <i class="fas fa-search" style="font-size: 1.2rem; cursor: pointer;"></i>
+                <a href="#" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: bold; font-size: 0.85rem;">SUBSCRIBE</a>
             </div>
         </div>
-        <div class="nav-right nav-links">
-            <a href="#" class="write-btn"><i class="far fa-edit"></i> Write</a>
-            <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fas fa-moon"></i>
-            </button>
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="author-tiny-avatar" style="cursor: pointer;">
+    </header>
+
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <article class="hero-main">
+                <a href="pesto-chicken-pasta.html">
+                    <img src="assets/pesto.png" alt="Pesto Chicken Pasta">
+                    <div class="hero-main-content">
+                        <span class="hero-tag">Health Tech</span>
+                        <h1 class="hero-title">Stop Ordering Takeout: The Massive Shift to 15-Minute Meals</h1>
+                        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.5; margin-bottom: 0.5rem;">How to master the energy slump with a high-protein, one-pan savior that's disrupting the delivery app industry.</p>
+                        <span style="font-size: 0.85rem; font-weight: 600;">By Midhlaj &bull; 2 hours ago</span>
+                    </div>
+                </a>
+            </article>
+
+            <aside class="hero-side">
+                <article class="side-article">
+                    <a href="post.html">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Code">
+                        <span class="hero-tag" style="margin-top: 0.5rem;">Engineering structure</span>
+                        <h3>Architecting Scalable Frontends in 2026: What you need to know</h3>
+                    </a>
+                </article>
+                <article class="side-article">
+                    <a href="post.html">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="AI">
+                        <span class="hero-tag" style="margin-top: 0.5rem;">Artificial Intelligence</span>
+                        <h3>Generative Models in UI Generation are changing prototyping forever</h3>
+                    </a>
+                </article>
+            </aside>
+        </section>
+
+        <!-- In-Feed Ad Unit -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="332-722-9307"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            <p style="position: absolute; top: 5px; right: 5px; font-size: 0.6rem;">ADVERTISEMENT</p>
         </div>
-    </nav>
 
-    <div class="layout-wrapper">
-        <!-- Main Feed (Left) -->
-        <main class="main-feed">
-            <!-- Google AdSense Ad Unit -->
-            <div style="text-align: center; margin-bottom: 3rem;" class="fade-up">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="332-722-9307"
-                     data-ad-slot="XXXXXXXXXX"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+        <!-- Latest News Grid -->
+        <div class="grid-header">
+            <h2>The Latest</h2>
+        </div>
+        
+        <div class="article-grid">
+            <article class="grid-article">
+                <a href="post.html">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80" alt="Design">
+                    <span class="hero-tag">Design Trends</span>
+                    <h3>The Psychology of Minimalism in 2026</h3>
+                    <p>Why blurry, semi-transparent backgrounds lost to pure white canvas and crisp typography.</p>
+                </a>
+            </article>
 
-            <!-- New Article -->
-            <a href="pesto-chicken-pasta.html" class="feed-card fade-up">
-                <div class="card-content">
-                    <div class="card-author-row">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
-                        <span>Midhlaj in Food & Health</span>
-                    </div>
-                    <h2 class="card-title">Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta</h2>
-                    <p class="card-excerpt">How to master the "post-office" energy slump with a high-protein, one-pan savior.</p>
-                    <div class="card-footer">
-                        <span>Mar 23 &bull; 4 min read</span>
-                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
-                    </div>
-                </div>
-                <img src="assets/pesto.png" alt="Pesto Pasta" class="card-thumb">
-            </a>
+            <article class="grid-article">
+                <a href="post.html">
+                    <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=400&q=80" alt="Workflow">
+                    <span class="hero-tag">Productivity</span>
+                    <h3>Building the Perfect Developer Workflow</h3>
+                    <p>Tools, extensions, and habits to maximize your coding sessions and avoid absolute burnout.</p>
+                </a>
+            </article>
 
-            <!-- Article 1 -->
-            <a href="post.html" class="feed-card fade-up">
-                <div class="card-content">
-                    <div class="card-author-row">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
-                        <span>Midhlaj in Engineering</span>
-                    </div>
-                    <h2 class="card-title">Architecting Scalable Frontends in 2026</h2>
-                    <p class="card-excerpt">Discover new patterns for managing massive component trees and global state securely without the historical bloat.</p>
-                    <div class="card-footer">
-                        <span>Mar 23 &bull; 5 min read</span>
-                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
-                    </div>
-                </div>
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Code" class="card-thumb">
-            </a>
+            <article class="grid-article">
+                <a href="post.html">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80" alt="3D">
+                    <span class="hero-tag">Creative</span>
+                    <h3>Integrating 3D Elements into the Native DOM</h3>
+                    <p>A comprehensive guide on merging WebGL experiences with native HTML elements gracefully.</p>
+                </a>
+            </article>
 
-            <!-- Article 2 -->
-            <a href="post.html" class="feed-card fade-up">
-                <div class="card-content">
-                    <div class="card-author-row">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
-                        <span>Midhlaj in Design</span>
-                    </div>
-                    <h2 class="card-title">The Psychology of Minimalism in 2026</h2>
-                    <p class="card-excerpt">Why blurry, semi-transparent backgrounds lost to pure white canvas and crisp typography.</p>
-                    <div class="card-footer">
-                        <span>Mar 18 &bull; 8 min read</span>
-                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
-                    </div>
-                </div>
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80" alt="Design" class="card-thumb">
-            </a>
-
-            <!-- Article 3 -->
-            <a href="post.html" class="feed-card fade-up">
-                <div class="card-content">
-                    <div class="card-author-row">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
-                        <span>Midhlaj in AI & Tech</span>
-                    </div>
-                    <h2 class="card-title">Generative Models in UI Generation</h2>
-                    <p class="card-excerpt">How LLMs with explicit design capabilities are natively changing frontend prototyping inside the editor.</p>
-                    <div class="card-footer">
-                        <span>Mar 10 &bull; 12 min read</span>
-                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
-                    </div>
-                </div>
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80" alt="AI" class="card-thumb">
-            </a>
-        </main>
-
-        <!-- Sidebar (Right) -->
-        <aside class="sidebar fade-up">
-            <h3>Discover more of what matters to you</h3>
-            <div class="topics-cloud">
-                <a href="#" class="topic-tag">Programming</a>
-                <a href="#" class="topic-tag">Data Science</a>
-                <a href="#" class="topic-tag">Technology</a>
-                <a href="#" class="topic-tag">Self Improvement</a>
-                <a href="#" class="topic-tag">Writing</a>
-                <a href="#" class="topic-tag">Relationships</a>
-                <a href="#" class="topic-tag">Machine Learning</a>
-            </div>
-            
-            <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; color: var(--text-muted); font-size: 0.85rem;">
-                <p>&copy; 2026 Bitess. A clean place to read and write.</p>
-            </div>
-        </aside>
+            <article class="grid-article">
+                <a href="post.html">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" alt="Career">
+                    <span class="hero-tag">Career Paths</span>
+                    <h3>Navigating Staff Engineer Interviews</h3>
+                    <p>What companies look for beyond coding skills, system design, and complex algorithms.</p>
+                </a>
+            </article>
+        </div>
     </div>
+
+    <footer style="background: var(--header-bg); color: var(--header-text); padding: 3rem 2rem; border-top: 4px solid var(--accent); margin-top: 4rem;">
+        <div class="page-container" style="display: flex; justify-content: space-between; align-items: center; padding: 0;">
+            <h2 class="logo">BITESS</h2>
+            <p style="font-size: 0.85rem; color: #888;">&copy; 2026 Bitess News Media. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
