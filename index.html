@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,166 +11,138 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://midhlajsha.github.io/blog-website-design/index.html">
     <title>Bitess | Home</title>
-    <!-- Modern Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google AdSense Placeholder (Replace Client ID) -->
+    
+    <!-- Fonts: Inter (UI) & Lora (Reading) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense Placeholder -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=332-722-9307" crossorigin="anonymous"></script>
-    <!-- Font Awesome for dark mode icon -->
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="glass">
-        <a href="index.html" class="logo">Bitess</a>
-        <div class="nav-links">
-            <a href="#">Articles</a>
-            <a href="#">Topics</a>
-            <a href="#">About</a>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="logo">Bitess</a>
+            <div class="search-bar">
+                <i class="fas fa-search" style="color: var(--text-muted); font-size: 0.9rem;"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-right nav-links">
+            <a href="#" class="write-btn"><i class="far fa-edit"></i> Write</a>
             <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
             </button>
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="author-tiny-avatar" style="cursor: pointer;">
         </div>
     </nav>
 
-    <header class="hero">
-        <h1 class="fade-up">Explore the Future of Web & Design</h1>
-        <p class="fade-up">Deep dives, insights, and stories on the tools shaping tomorrow's digital landscapes.</p>
-    </header>
+    <div class="layout-wrapper">
+        <!-- Main Feed (Left) -->
+        <main class="main-feed">
+            <!-- Google AdSense Ad Unit -->
+            <div style="text-align: center; margin-bottom: 3rem;" class="fade-up">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="332-722-9307"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
 
-    <main class="container">
-        <h2 class="section-title fade-up">Latest Posts</h2>
-
-        <!-- Google AdSense Ad Unit Placeholder -->
-        <div style="text-align: center; margin: 2rem 0;" class="fade-up">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="332-722-9307"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-        
-        <div class="blog-grid">
-            <!-- New Blog Card -->
-            <a href="pesto-chicken-pasta.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="assets/pesto.png" alt="Pesto Chicken Pasta" class="card-img">
-                </div>
+            <!-- New Article -->
+            <a href="pesto-chicken-pasta.html" class="feed-card fade-up">
                 <div class="card-content">
-                    <span class="card-tag">Food & Health</span>
-                    <h3 class="card-title">Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta</h3>
+                    <div class="card-author-row">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
+                        <span>Midhlaj in Food & Health</span>
+                    </div>
+                    <h2 class="card-title">Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta</h2>
                     <p class="card-excerpt">How to master the "post-office" energy slump with a high-protein, one-pan savior.</p>
                     <div class="card-footer">
-                        <span>March 23, 2026</span>
-                        <span>4 min read</span>
+                        <span>Mar 23 &bull; 4 min read</span>
+                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
                     </div>
                 </div>
+                <img src="assets/pesto.png" alt="Pesto Pasta" class="card-thumb">
             </a>
 
-            <!-- Blog Card 1 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Laptop code" class="card-img">
-                </div>
+            <!-- Article 1 -->
+            <a href="post.html" class="feed-card fade-up">
                 <div class="card-content">
-                    <span class="card-tag">Engineering</span>
-                    <h3 class="card-title">Architecting Scalable Frontends in 2026</h3>
-                    <p class="card-excerpt">Discover new patterns for managing massive component trees and global state securely.</p>
+                    <div class="card-author-row">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
+                        <span>Midhlaj in Engineering</span>
+                    </div>
+                    <h2 class="card-title">Architecting Scalable Frontends in 2026</h2>
+                    <p class="card-excerpt">Discover new patterns for managing massive component trees and global state securely without the historical bloat.</p>
                     <div class="card-footer">
-                        <span>March 23, 2026</span>
-                        <span>5 min read</span>
+                        <span>Mar 23 &bull; 5 min read</span>
+                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
                     </div>
                 </div>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Code" class="card-thumb">
             </a>
 
-            <!-- Blog Card 2 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80" alt="Design workflow" class="card-img">
-                </div>
+            <!-- Article 2 -->
+            <a href="post.html" class="feed-card fade-up">
                 <div class="card-content">
-                    <span class="card-tag">Design</span>
-                    <h3 class="card-title">The Psychology of Glassmorphism</h3>
-                    <p class="card-excerpt">Why blurry, semi-transparent backgrounds dominate the UI landscape and how to get it right.</p>
+                    <div class="card-author-row">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
+                        <span>Midhlaj in Design</span>
+                    </div>
+                    <h2 class="card-title">The Psychology of Minimalism in 2026</h2>
+                    <p class="card-excerpt">Why blurry, semi-transparent backgrounds lost to pure white canvas and crisp typography.</p>
                     <div class="card-footer">
-                        <span>March 18, 2026</span>
-                        <span>8 min read</span>
+                        <span>Mar 18 &bull; 8 min read</span>
+                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
                     </div>
                 </div>
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80" alt="Design" class="card-thumb">
             </a>
 
-            <!-- Blog Card 3 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="AI abstract" class="card-img">
-                </div>
+            <!-- Article 3 -->
+            <a href="post.html" class="feed-card fade-up">
                 <div class="card-content">
-                    <span class="card-tag">AI & Tech</span>
-                    <h3 class="card-title">Generative Models in UI Generation</h3>
-                    <p class="card-excerpt">How LLMs with design capabilities are changing frontend prototyping forever.</p>
+                    <div class="card-author-row">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Midhlaj" class="author-tiny-avatar">
+                        <span>Midhlaj in AI & Tech</span>
+                    </div>
+                    <h2 class="card-title">Generative Models in UI Generation</h2>
+                    <p class="card-excerpt">How LLMs with explicit design capabilities are natively changing frontend prototyping inside the editor.</p>
                     <div class="card-footer">
-                        <span>March 10, 2026</span>
-                        <span>12 min read</span>
+                        <span>Mar 10 &bull; 12 min read</span>
+                        <i class="far fa-bookmark" style="font-size: 1.1rem;"></i>
                     </div>
                 </div>
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80" alt="AI" class="card-thumb">
             </a>
+        </main>
+
+        <!-- Sidebar (Right) -->
+        <aside class="sidebar fade-up">
+            <h3>Discover more of what matters to you</h3>
+            <div class="topics-cloud">
+                <a href="#" class="topic-tag">Programming</a>
+                <a href="#" class="topic-tag">Data Science</a>
+                <a href="#" class="topic-tag">Technology</a>
+                <a href="#" class="topic-tag">Self Improvement</a>
+                <a href="#" class="topic-tag">Writing</a>
+                <a href="#" class="topic-tag">Relationships</a>
+                <a href="#" class="topic-tag">Machine Learning</a>
+            </div>
             
-            <!-- Blog Card 4 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=600&q=80" alt="Developer desk" class="card-img">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Productivity</span>
-                    <h3 class="card-title">Building the Perfect Developer Workflow</h3>
-                    <p class="card-excerpt">Tools, extensions, and habits to maximize your coding sessions and avoid burnout.</p>
-                    <div class="card-footer">
-                        <span>March 05, 2026</span>
-                        <span>6 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Blog Card 5 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Abstract 3D rendering" class="card-img">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Creative</span>
-                    <h3 class="card-title">Integrating 3D Elements into the DOM</h3>
-                    <p class="card-excerpt">A comprehensive guide on merging WebGL experiences with native HTML elements gracefully.</p>
-                    <div class="card-footer">
-                        <span>Feb 28, 2026</span>
-                        <span>10 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Blog Card 6 -->
-            <a href="post.html" class="blog-card glass fade-up">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Planning meeting" class="card-img">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Career</span>
-                    <h3 class="card-title">Navigating Staff Engineer Interviews</h3>
-                    <p class="card-excerpt">What companies look for beyond coding skills, system design, and algorithms.</p>
-                    <div class="card-footer">
-                        <span>Feb 22, 2026</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </main>
-
-    <footer class="fade-up">
-        <p>&copy; 2026 Bitess. Designed with precision and style.</p>
-    </footer>
+            <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; color: var(--text-muted); font-size: 0.85rem;">
+                <p>&copy; 2026 Bitess. A clean place to read and write.</p>
+            </div>
+        </aside>
+    </div>
 
     <script src="script.js"></script>
 </body>

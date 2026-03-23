@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +11,28 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://midhlajsha.github.io/blog-website-design/post.html">
     <title>Architecting Scalable Frontends in 2026 | Bitess</title>
-    <!-- Modern Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google AdSense Placeholder (Replace Client ID) -->
+    
+    <!-- Fonts: Inter (UI) & Lora (Reading) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense Placeholder -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=332-722-9307" crossorigin="anonymous"></script>
-    <!-- Font Awesome for dark mode icon -->
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="glass">
-        <a href="index.html" class="logo">Bitess</a>
-        <div class="nav-links">
-            <a href="index.html">Articles</a>
-            <a href="#">Topics</a>
-            <a href="#">About</a>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="logo">Bitess</a>
+        </div>
+        <div class="nav-right nav-links">
+            <a href="#" class="write-btn"><i class="far fa-edit"></i> Write</a>
             <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
             </button>
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="author-tiny-avatar" style="cursor: pointer;">
         </div>
     </nav>
     
@@ -36,21 +40,27 @@
         <div class="progress-bar" id="progress-bar"></div>
     </div>
 
-    <article>
-        <header class="post-header">
-            <h1 class="fade-up">Architecting Scalable Frontends in 2026</h1>
-            <div class="post-meta fade-up">
-                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj" class="author-avatar">
-                <span>By Midhlaj</span>
-                <span>&bull;</span>
-                <span>March 23, 2026</span>
-                <span>&bull;</span>
-                <span>5 min read</span>
+    <article class="article-wrapper">
+        
+        <h1 class="article-title fade-up">Architecting Scalable Frontends in 2026</h1>
+        <p class="article-subtitle fade-up">Discover new patterns for managing massive component trees and global state securely.</p>
+        
+        <div class="article-author-card fade-up">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj" class="article-author-avatar">
+            <div class="author-meta">
+                <span class="author-name">Midhlaj</span>
+                <span class="author-details">Published in Engineering &bull; 5 min read &bull; Mar 23</span>
             </div>
-        </header>
+        </div>
 
-        <!-- Google AdSense Ad Unit Placeholder -->
-        <div style="text-align: center; margin: 0 auto 3rem; max-width: 800px;" class="fade-up">
+        <div class="article-stats-bar fade-up">
+            <span><i class="far fa-heart"></i> 4.2K</span>
+            <span><i class="far fa-comment"></i> 132</span>
+            <span><i class="far fa-bookmark"></i></span>
+        </div>
+
+        <!-- Google AdSense Ad Unit -->
+        <div style="text-align: center; margin: 2rem 0;" class="fade-up">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="332-722-9307"
@@ -62,9 +72,9 @@
             </script>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Laptop code" class="post-hero-image fade-up">
-
-        <div class="post-content fade-up">
+        <div class="article-body fade-up">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Laptop code">
+            
             <p>The landscape of frontend development is continuously shifting. What was considered a robust architecture just a few years ago is now often seen as bloated and difficult to maintain. As applications grow in complexity and user expectations soar, finding architectural patterns that scale gracefully is more critical than ever.</p>
             
             <p>In 2026, the discussion has largely moved away from just choosing a framework. It's about establishing clear boundaries, isolating state, and creating a cohesive design system that non-engineers can interact with. Here are some of the dominant strategies emerging.</p>
@@ -85,15 +95,8 @@
             <p>Users expect applications to work seamlessly offline and sync instantaneously when a connection is restored. Local-first architecture prioritizes the local database as the primary source of truth. Changes are optimistic, fast, and later synced via CRDTs (Conflict-free Replicated Data Types) to the backend.</p>
             
             <p>This approach virtually eliminates loading spinners for data mutations and provides an incredibly snappy user experience.</p>
-
-            <h2>Conclusion</h2>
-            <p>Scalability in 2026 isn't just about handling traffic; it's about organizational scalability—allowing teams to grow without stepping on each other's toes—and user experience scalability, ensuring the app remains fast and responsive regardless of how many features are added.</p>
         </div>
     </article>
-
-    <footer class="fade-up">
-        <p>&copy; 2026 Bitess. Designed with precision and style.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>

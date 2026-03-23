@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +11,28 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://midhlajsha.github.io/blog-website-design/pesto-chicken-pasta.html">
     <title>Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta | Bitess</title>
-    <!-- Modern Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google AdSense Placeholder (Replace Client ID) -->
+    
+    <!-- Fonts: Inter (UI) & Lora (Reading) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense Placeholder -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=332-722-9307" crossorigin="anonymous"></script>
-    <!-- Font Awesome for dark mode icon -->
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="glass">
-        <a href="index.html" class="logo">Bitess</a>
-        <div class="nav-links">
-            <a href="index.html">Articles</a>
-            <a href="#">Topics</a>
-            <a href="#">About</a>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="logo">Bitess</a>
+        </div>
+        <div class="nav-right nav-links">
+            <a href="#" class="write-btn"><i class="far fa-edit"></i> Write</a>
             <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
             </button>
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="author-tiny-avatar" style="cursor: pointer;">
         </div>
     </nav>
     
@@ -36,22 +40,27 @@
         <div class="progress-bar" id="progress-bar"></div>
     </div>
 
-    <article>
-        <header class="post-header">
-            <h1 class="fade-up">Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta</h1>
-            <p class="fade-up" style="font-size: 1.25rem; color: var(--text-muted); margin-top: 1rem;">How to master the "post-office" energy slump with a high-protein, one-pan savior.</p>
-            <div class="post-meta fade-up" style="margin-top: 2rem;">
-                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj" class="author-avatar">
-                <span>By Midhlaj</span>
-                <span>&bull;</span>
-                <span>March 23, 2026</span>
-                <span>&bull;</span>
-                <span>4 min read</span>
+    <article class="article-wrapper">
+        
+        <h1 class="article-title fade-up">Stop Ordering Takeout: The 15-Minute Pesto Chicken Pasta</h1>
+        <p class="article-subtitle fade-up">How to master the "post-office" energy slump with a high-protein, one-pan savior.</p>
+        
+        <div class="article-author-card fade-up">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" alt="Author Midhlaj" class="article-author-avatar">
+            <div class="author-meta">
+                <span class="author-name">Midhlaj</span>
+                <span class="author-details">Published in Food & Health &bull; 4 min read &bull; Mar 23</span>
             </div>
-        </header>
+        </div>
 
-        <!-- Google AdSense Ad Unit Placeholder -->
-        <div style="text-align: center; margin: 0 auto 3rem; max-width: 800px;" class="fade-up">
+        <div class="article-stats-bar fade-up">
+            <span><i class="far fa-heart"></i> 6.1K</span>
+            <span><i class="far fa-comment"></i> 249</span>
+            <span><i class="far fa-bookmark"></i></span>
+        </div>
+
+        <!-- Google AdSense Ad Unit -->
+        <div style="text-align: center; margin: 2rem 0;" class="fade-up">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="332-722-9307"
@@ -63,16 +72,16 @@
             </script>
         </div>
 
-        <img src="assets/pesto.png" alt="Pesto Chicken Pasta" class="post-hero-image fade-up">
-
-        <div class="post-content fade-up">
+        <div class="article-body fade-up">
+            <img src="assets/pesto.png" alt="Pesto Chicken Pasta">
+            
             <p>Finding time to cook a healthy meal after a long day in the office can feel like a second job. We’ve all been there—staring into the fridge at 7:00 PM, reaching for the delivery app because the thought of a multi-step recipe feels overwhelming.</p>
             
             <p>This Pesto Chicken Pasta is designed specifically for those "I have no time" nights. It’s not just about speed; it’s about high-quality fuel. By using whole-grain pasta and a vibrant basil pesto, you’re getting complex carbohydrates and healthy fats without the heavy, sluggish feeling that comes from traditional cream-based sauces.</p>
 
             <h2>The 15-Minute Blueprint</h2>
             
-            <h3>The Ingredients:</h3>
+            <p><strong>The Ingredients:</strong></p>
             <ul>
                 <li><strong>200g Whole-grain penne:</strong> For sustained energy.</li>
                 <li><strong>1 Chicken breast (cubed):</strong> Your lean protein foundation.</li>
@@ -80,23 +89,17 @@
                 <li><strong>Handful of cherry tomatoes:</strong> For a burst of acidity.</li>
             </ul>
 
-            <h3>The Method:</h3>
-            <ol>
-                <li><strong>Start the water:</strong> Get your pasta boiling immediately. This is your primary timer.</li>
-                <li><strong>Sauté the protein:</strong> While the pasta cooks, toss your cubed chicken into a pan with a drop of olive oil. Cook until golden and firm.</li>
-                <li><strong>The Assembly:</strong> Once the pasta is al dente, drain it (save a splash of the pasta water!) and toss it directly into the pan with the chicken.</li>
-                <li><strong>Finish:</strong> Add the halved cherry tomatoes and the pesto. Stir over low heat for 60 seconds until everything is coated in that vibrant green glow.</li>
-            </ol>
+            <p><strong>The Method:</strong></p>
+            <p><strong>1. Start the water:</strong> Get your pasta boiling immediately. This is your primary timer.</p>
+            <p><strong>2. Sauté the protein:</strong> While the pasta cooks, toss your cubed chicken into a pan with a drop of olive oil. Cook until golden and firm.</p>
+            <p><strong>3. The Assembly:</strong> Once the pasta is al dente, drain it (save a splash of the pasta water!) and toss it directly into the pan with the chicken.</p>
+            <p><strong>4. Finish:</strong> Add the halved cherry tomatoes and the pesto. Stir over low heat for 60 seconds until everything is coated in that vibrant green glow.</p>
 
             <blockquote>
-                <strong>The Pro Health-Hack:</strong> If you're looking to hit specific fitness goals, swap traditional pasta for chickpea or lentil pasta. This simple switch can nearly double your protein and fiber intake per serving while keeping the dish gluten-free.
+                The Pro Health-Hack: If you're looking to hit specific fitness goals, swap traditional pasta for chickpea or lentil pasta. This simple switch can nearly double your protein and fiber intake per serving while keeping the dish gluten-free.
             </blockquote>
         </div>
     </article>
-
-    <footer class="fade-up">
-        <p>&copy; 2026 Bitess. Designed with precision and style.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
